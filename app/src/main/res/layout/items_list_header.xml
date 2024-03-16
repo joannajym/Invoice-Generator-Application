@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#edf5f5"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvItemNameHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Item Name"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#6B2A2C"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvItemQuantityHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Item Quantity"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#6B2A2C"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvItemCostHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Item Cost"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#6B2A2C"
+        android:textSize="14sp" />
+
+</LinearLayout>
