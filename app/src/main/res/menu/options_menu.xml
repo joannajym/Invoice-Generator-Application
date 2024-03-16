@@ -1,0 +1,13 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add_item"
+        android:title="ADD-ITEM"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_clear_all_fields"
+        android:title="Clear all fields"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+</menu>

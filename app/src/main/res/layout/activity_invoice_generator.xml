@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4E4EB"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="130dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <Switch
+        android:id="@+id/paidSwitch"
+        android:layout_width="58dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/baloo"
+        android:textColor="#3F3734"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/buyerAddressID" />
+
+    <TextView
+        android:id="@+id/issuerNameTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baloo"
+        android:text="Issuer Name"
+        android:textColor="#3F3734"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/buyerNameTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="Buyer Name"
+        android:textColor="#3F3734"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/issuerNameTextView" />
+
+    <TextView
+        android:id="@+id/buyerAddressTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="Buyer Address"
+        android:textColor="#3F3734"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/buyerNameTextView" />
+
+    <TextView
+        android:id="@+id/itemNameTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/baloo"
+        android:text="Item Name"
+        android:textColor="#3F3734"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/isPaidTextView" />
+
+    <TextView
+        android:id="@+id/itemQuantityTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="Item Quantity"
+        android:textColor="#3F3734"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/itemNameTextView" />
+
+    <TextView
+        android:id="@+id/itemCostTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="Item Cost"
+        android:textColor="#3F3734"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/itemQuantityTextView" />
+
+    <TextView
+        android:id="@+id/isPaidTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/baloo"
+        android:text="Is Paid?"
+        android:textColor="#3F3734"
+        app:layout_constraintEnd_toStartOf="@+id/paidSwitch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/buyerAddressTextView"
+        tools:text="Is Paid?" />
+
+    <EditText
+        android:id="@+id/issuerNameID"
+        android:layout_width="191dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:inputType="text"
+        android:textColor="#3F3734"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/buyerNameID"
+        android:layout_width="191dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:inputType="text"
+        android:textColor="#3F3734"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/issuerNameID" />
+
+    <EditText
+        android:id="@+id/buyerAddressID"
+        android:layout_width="191dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:inputType="text"
+        android:textColor="#3F3734"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/buyerNameID" />
+
+    <EditText
+        android:id="@+id/itemNameID"
+        android:layout_width="191dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:inputType="text"
+        android:textColor="#3F3734"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/paidSwitch" />
+
+    <EditText
+        android:id="@+id/itemQuantityID"
+        android:layout_width="191dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:inputType="text"
+        android:textColor="#3F3734"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameID" />
+
+    <EditText
+        android:id="@+id/itemCostID"
+        android:layout_width="191dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:inputType="text"
+        android:textColor="#3F3734"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/itemQuantityID" />
+
+    <TextView
+        android:id="@+id/invoiceTotalTextView"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#6B2A2C"
+        android:fontFamily="@font/baloo"
+        android:includeFontPadding="false"
+        android:paddingLeft="50dp"
+        android:paddingTop="8dp"
+        android:text="Invoice Total:  $"
+        android:textAlignment="textStart"
+        android:textColor="#F4E4EB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemCostID" />
+
+    <TextView
+        android:id="@+id/invoiceTotalID"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/baloo"
+        android:paddingTop="8dp"
+        android:textColor="#F4E4EB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/invoiceTotalTextView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/invoiceTotalTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/items_list_header"
+        android:layout_width="412dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invoiceTotalTextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items_recycler_view"
+        android:layout_width="413dp"
+        android:layout_height="129dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/items_recycler_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnWiki"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/baloo"
+        android:text="Wiki"
+        android:textColor="#3F3734"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/itemNameID"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
