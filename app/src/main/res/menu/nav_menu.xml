@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_add_item"
+        android:title="Add Item" />
+    <item
+        android:id="@+id/nav_add_invoice"
+        android:title="Add Invoice" />
+    <item
+        android:id="@+id/nav_clear_fields"
+        android:title="Clear All Fields" />
+    <item
+        android:id="@+id/nav_items_map"
+        android:title="Items Map" />
+    <item
+        android:id="@+id/nav_list_invoices"
+        android:title="List All Invoices" />
+    <item
+        android:id="@+id/nav_exit_app"
+        android:title="Exit Application" />
+</menu>

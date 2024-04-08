@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#edf5f5"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+    android:id="@+id/tvInvoiceIdHeader"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fontFamily="@font/baloo"
+    android:gravity="center"
+    android:text="Invoice ID"
+    android:textAppearance="?attr/textAppearanceListItem"
+    android:textColor="#6B2A2C"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/tvIssuerNameHeader"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fontFamily="@font/baloo"
+    android:gravity="center"
+    android:text="Issuer Name"
+    android:textAppearance="?attr/textAppearanceListItem"
+    android:textColor="#6B2A2C"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/tvBuyerNameHeader"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fontFamily="@font/baloo"
+    android:gravity="center"
+    android:text="Buyer Name"
+    android:textAppearance="?attr/textAppearanceListItem"
+    android:textColor="#6B2A2C"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/tvTotalHeader"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fontFamily="@font/baloo"
+    android:gravity="center"
+    android:text="Total"
+    android:textAppearance="?attr/textAppearanceListItem"
+    android:textColor="#6B2A2C"
+    android:textSize="14sp" />
+
+</LinearLayout>
